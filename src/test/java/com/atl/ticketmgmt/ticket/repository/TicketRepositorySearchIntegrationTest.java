@@ -50,7 +50,7 @@ class TicketRepositorySearchIntegrationTest {
         assertThat(ticketRepository.findForList("GammaSearchKey" + suffix, null, page).getContent())
                 .isEmpty();
 
-        assertThat(ticketRepository.findForList(null, TicketStatus.IN_PROGRESS, page).getContent())
+        assertThat(ticketRepository.findForList("", TicketStatus.IN_PROGRESS, page).getContent())
                 .extracting(Ticket::getTicketId)
                 .contains(inDescription.getTicketId());
     }

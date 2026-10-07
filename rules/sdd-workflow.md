@@ -1,20 +1,21 @@
 # Spec-Driven Development (SDD) Workflow
 
-Source: Ticket Management System assessment (`docs/assessment.pdf`).
+**Source:** Ticket Management System assessment (`docs/assessment.pdf`)  
+**Last reviewed:** 28 September 2026
 
-## Required workflow
+## Workflow
 
 ```
 Requirement → Specification → Plan / Tasks → Implementation → Testing → Review → Fix
 ```
 
-- **Specifications before implementation**—no coding against guessed requirements.
-- **Do not** start with a one-shot prompt such as “Build the complete application.”
-- The assessment prioritizes **how** the system is built with AI (specs, validation, grounding)—not only the running app.
+**Principles:**
 
-## Specification artefacts (create before implementation)
+- Write specifications **before** writing implementation code.
+- Avoid one-shot prompts such as “Build the complete application.”
+- The assessment evaluates **process** (specs, validation, grounding) as well as the working application.
 
-Example structure from assessment (exact files may vary):
+## Specification artefacts (pre-implementation)
 
 ```
 spec/
@@ -32,17 +33,22 @@ spec/
 
 ## Steering files
 
-Maintain reusable AI instructions under `rules/`, `skills/`, and `commands/` (this repo).
+Reusable AI and engineering guidance lives in `rules/`, `skills/`, and `commands/`.
 
 ## AI mistake documentation
 
-- Identify at least **one meaningful AI mistake** (wrong code or ungrounded/hallucinated answer) during development and **document** it (assessment acceptance criterion).
-- Location/format: **design decision**—reference in `docs/prompt-history.md` or project docs.
+- Record at least **one meaningful AI mistake** (incorrect code or ungrounded answer) caught during development.
+- Primary location: `docs/prompt-history.md` (mirrored under `.specstory/history/`).
 
 ## Token optimisation (advisory)
 
-Assessment suggests Graphify, Caveman, Codebase-memory MCP, and prompt caching for static system instructions—optional, not acceptance criteria.
+Assessment mentions Graphify, Caveman, Codebase-memory MCP, and prompt caching—optional, not required for acceptance.
 
-## Commands
+## Review commands
 
-Use `commands/review-spec.md`, `commands/review-code.md`, `commands/generate-tests.md`, and `commands/review-rag-output.md` at each phase gate.
+At each phase gate, use:
+
+- `commands/review-spec.md`
+- `commands/review-code.md`
+- `commands/generate-tests.md`
+- `commands/review-rag-output.md`

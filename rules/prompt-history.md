@@ -1,6 +1,7 @@
 # Prompt History
 
-Source: Ticket Management System assessment (`docs/assessment.pdf`).
+**Source:** Ticket Management System assessment (`docs/assessment.pdf`)  
+**Last updated:** 28 September 2026
 
 ## Locations
 

@@ -1,8 +1,11 @@
 # Ticket Management System
 
-Spec-driven **Spring Boot** backend (Java 21, PostgreSQL + PGVector, Ollama via Spring AI) and **Next.js** frontend for support tickets and grounded AI Q&A over ticket history.
+A spec-driven support ticket platform with **grounded AI Q&A** over ticket history.
 
-Assessment source: `docs/assessment.pdf`. Specifications: `spec/`. Implementation plan: `plan/implementation-plan.md`.
+- **Backend:** Spring Boot (Java 21), PostgreSQL + pgvector, Ollama via Spring AI
+- **Frontend:** Next.js App Router
+
+Assessment brief: `docs/assessment.pdf` · Specifications: `spec/` · Build plan: `plan/implementation-plan.md` · Submission checklist: `docs/SUBMISSION.md`
 
 ## Project structure
 

@@ -82,7 +82,7 @@ public class TicketService {
 
     private static String normalizeQuery(String query) {
         if (!StringUtils.hasText(query)) {
-            return null;
+            return "";
         }
         return query.trim();
     }

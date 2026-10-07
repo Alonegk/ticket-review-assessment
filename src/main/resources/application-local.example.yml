@@ -1,8 +1,18 @@
 # Copy to application-local.yml (gitignored) for local overrides.
-# Example: spring.config.activate.on-profile=local in application.yml or SPRING_PROFILES_ACTIVE=local
+# Activate: SPRING_PROFILES_ACTIVE=local,postgres
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ticketmgmt
-    username: ticket
+    url: jdbc:postgresql://localhost:5432/ticket-management
+    username: postgres
     password: change-me
+    driver-class-name: org.postgresql.Driver
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      embedding:
+        options:
+          model: nomic-embed-text
+      chat:
+        options:
+          model: llama3.2

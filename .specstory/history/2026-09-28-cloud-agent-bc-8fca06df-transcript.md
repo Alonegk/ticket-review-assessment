@@ -1,5 +1,9 @@
 # Cloud Agent prompt & response transcript
 
+**Archive date:** 28 September 2026  
+**Source:** [Cloud Agent bc-8fca06df](https://cursor.com/agents/bc-8fca06df-7547-4d23-9220-1df93afd61cf)  
+**Canonical copy:** `docs/agent-transcript-bc-8fca06df.md`
+
 ## Turn 1 — User
 
 I’m setting up the Ticket Management System locally.

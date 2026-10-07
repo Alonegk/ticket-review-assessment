@@ -20,7 +20,7 @@ public interface TicketRepository extends JpaRepository<Ticket, UUID> {
             SELECT t FROM Ticket t
             WHERE (:status IS NULL OR t.status = :status)
               AND (
-                :q IS NULL
+                :q = ''
                 OR LOWER(t.title) LIKE LOWER(CONCAT('%', :q, '%'))
                 OR LOWER(t.description) LIKE LOWER(CONCAT('%', :q, '%'))
                 OR LOWER(t.ticketId) LIKE LOWER(CONCAT('%', :q, '%'))

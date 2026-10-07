@@ -109,11 +109,11 @@ class TicketServiceTest {
 
     @Test
     void listUsesConfiguredMax() {
-        when(ticketRepository.findForList(eq(null), eq(null), any(Pageable.class)))
+        when(ticketRepository.findForList(eq(""), eq(null), any(Pageable.class)))
                 .thenReturn(new PageImpl<>(List.of()));
 
         ticketService.list(null, null);
 
-        verify(ticketRepository).findForList(eq(null), eq(null), any(Pageable.class));
+        verify(ticketRepository).findForList(eq(""), eq(null), any(Pageable.class));
     }
 }
